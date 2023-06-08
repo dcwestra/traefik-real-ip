@@ -1,8 +1,8 @@
 displayName: Traefik Real IP
 type: middleware
-import: github.com/jramsgz/traefik-real-ip
+import: github.com/dcwestra/traefik-real-ip
 
-summary: When traefik is deployed behind a load balancer, it should get the real IP from the X-Forwarded-For or Cf-Connecting-Ip (if from Cloudflare) header. 
+summary: When traefik is deployed behind a load balancer, it should get the real IP from the X-Forwarded-For or Cf-Connecting-Ip (if from Cloudflare) header. Attemping to fix local traffic error.
 
 testData:
   excludednets:
