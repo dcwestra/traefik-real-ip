@@ -72,7 +72,7 @@ func (r *RealIPOverWriter) ServeHTTP(rw http.ResponseWriter, req *http.Request) 
 	}
 
 	// If it is not possible to determine the real IP, the connecting IP is used as a fallback.
-	if realIP == "" {
+	if xRealIP == "" {
 		realIP = req.RemoteAddr;
 	}
 
