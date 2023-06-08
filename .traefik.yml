@@ -3,6 +3,7 @@ type: middleware
 import: github.com/dcwestra/traefik-real-ip
 
 summary: (Attemping to fix local traffic error) When traefik is deployed behind a load balancer, it should get the real IP from the X-Forwarded-For or Cf-Connecting-Ip (if from Cloudflare) header.
+
 testData:
   excludednets:
     - "1.1.1.1/24"
